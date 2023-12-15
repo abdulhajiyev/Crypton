@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    // "baseUrl": "./src",
+    "target": "es6",
+    "sourceMap": false,
+    "outDir": "./build",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "importHelpers": true,
+    "removeComments": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["jest"],
+    "paths": {
+      // "@/libs/*": ["libs/*"]
+      // "@/types/*": ["src/types/*"],
+      // "@/controllers/*": ["src/controllers/*"],
+      // "@/commands/*": ["src/commands/*"]
+      // "@/utils/*": ["src/utils/*"]
+    }
+  },
+  "lib": ["esnext"],
+  "typeRoots": ["./src/", "./node_modules/@types"],
+  "exclude": ["node_modules/", "build/", "tests/**"]
+}
